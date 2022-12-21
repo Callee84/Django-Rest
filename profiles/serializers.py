@@ -10,7 +10,6 @@ class ProfileSerializer(serializers.ModelSerializer):
         request = self.context['request']
         return request.user == obj.owner
 
-
     class Meta:
         model = Profile
         fields = [
